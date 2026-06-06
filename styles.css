@@ -139,6 +139,7 @@ h2 {
 }
 
 .panel,
+.idea,
 .status {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -168,6 +169,46 @@ h2 {
 
 .steps li + li {
   margin-top: 10px;
+}
+
+.idea {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 24px;
+  margin-top: 18px;
+  padding: 24px;
+}
+
+.idea .eyebrow {
+  color: var(--accent);
+}
+
+.idea__header p {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.idea__list {
+  display: grid;
+  gap: 12px;
+}
+
+.idea-item {
+  padding: 16px;
+  border-radius: 8px;
+  background: #f4f0e8;
+}
+
+.idea-item h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.idea-item p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
 }
 
 .status {
@@ -228,6 +269,7 @@ h2 {
 
   .intro,
   .grid,
+  .idea,
   .status {
     grid-template-columns: 1fr;
   }
