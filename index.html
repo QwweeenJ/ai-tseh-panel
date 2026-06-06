@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личная панель запуска | AI Цех</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="intro" aria-labelledby="project-title">
+        <div class="intro__text">
+          <p class="eyebrow">AI Цех · домашка второго урока</p>
+          <h1 id="project-title">Личная панель запуска</h1>
+          <p class="lead">
+            Это маленькая страница, с которой я начинаю свой проект на AI Цехе:
+            фиксирую идею, цель, следующие шаги и текущий статус.
+          </p>
+        </div>
+
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true">☀</span>
+          <span class="theme-toggle__text">Сменить настроение</span>
+        </button>
+      </section>
+
+      <section class="grid" aria-label="Информация о проекте">
+        <article class="panel panel--wide">
+          <h2>Кто я и что хочу собрать</h2>
+          <p>
+            Я учусь проходить путь от идеи до опубликованного сайта. Сейчас мой
+            первый проект — простая личная панель, где можно быстро увидеть
+            цель, план и прогресс.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>Моя цель на AI Цех</h2>
+          <p>
+            Научиться собирать понятные web-проекты руками: запускать их на
+            компьютере, сохранять версии и публиковать ссылку для других людей.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>Следующие 3 шага</h2>
+          <ol class="steps">
+            <li>Проверить страницу через localhost.</li>
+            <li>Сохранить первую версию проекта.</li>
+            <li>Опубликовать сайт и получить публичную ссылку.</li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="status" aria-labelledby="status-title">
+        <div>
+          <p class="eyebrow">Статус проекта</p>
+          <h2 id="status-title">Маршрут публикации</h2>
+        </div>
+
+        <div class="status-list">
+          <div class="status-item status-item--done">
+            <span aria-hidden="true">✓</span>
+            <p>Проверено локально</p>
+          </div>
+          <div class="status-item">
+            <span aria-hidden="true">•</span>
+            <p>Версия будет сохранена через commit</p>
+          </div>
+          <div class="status-item">
+            <span aria-hidden="true">•</span>
+            <p>Публикация на Vercel будет следующим шагом</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
