@@ -44,10 +44,25 @@
 
         <article class="panel">
           <h2>Следующие 3 шага</h2>
-          <ol class="steps">
-            <li>Проверить страницу через localhost.</li>
-            <li>Сохранить первую версию проекта.</li>
-            <li>Опубликовать сайт и получить публичную ссылку.</li>
+          <p class="steps-progress" aria-live="polite">
+            Выполнено: <span class="steps-progress__count">0</span> из 3
+          </p>
+          <ol class="steps interactive-steps">
+            <li>
+              <button class="step-button" type="button" aria-pressed="false">
+                Проверить страницу через localhost.
+              </button>
+            </li>
+            <li>
+              <button class="step-button" type="button" aria-pressed="false">
+                Сохранить первую версию проекта.
+              </button>
+            </li>
+            <li>
+              <button class="step-button" type="button" aria-pressed="false">
+                Опубликовать сайт и получить публичную ссылку.
+              </button>
+            </li>
           </ol>
         </article>
       </section>
