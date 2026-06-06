@@ -171,6 +171,60 @@ h2 {
   margin-top: 10px;
 }
 
+.steps-progress {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  margin-bottom: 14px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: #20312d;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.interactive-steps {
+  display: grid;
+  gap: 10px;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.interactive-steps li {
+  color: var(--muted);
+}
+
+.interactive-steps li + li {
+  margin-top: 0;
+}
+
+.step-button {
+  width: calc(100% - 28px);
+  min-height: 44px;
+  margin-left: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f9f6ef;
+  color: #20312d;
+  font: inherit;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+}
+
+.step-button:hover {
+  border-color: var(--accent);
+}
+
+.step-button[aria-pressed="true"] {
+  border-color: transparent;
+  background: #dcefe9;
+  color: #20312d;
+  text-decoration: line-through;
+}
+
 .idea {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
